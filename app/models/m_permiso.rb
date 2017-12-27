@@ -1,0 +1,2 @@
+class MPermiso < ApplicationRecord
+end

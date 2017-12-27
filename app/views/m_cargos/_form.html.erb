@@ -1,0 +1,17 @@
+<%= form_with(model: m_cargo, local: true) do |form| %>
+  <% if m_cargo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(m_cargo.errors.count, "error") %> prohibited this m_cargo from being saved:</h2>
+
+      <ul>
+      <% m_cargo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

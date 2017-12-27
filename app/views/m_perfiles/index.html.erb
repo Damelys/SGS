@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>M Perfiles</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @m_perfiles.each do |m_perfil| %>
+      <tr>
+        <td><%= link_to 'Show', m_perfil %></td>
+        <td><%= link_to 'Edit', edit_m_perfil_path(m_perfil) %></td>
+        <td><%= link_to 'Destroy', m_perfil, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New M Perfil', new_m_perfil_path %>

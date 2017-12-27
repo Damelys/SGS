@@ -1,0 +1,2 @@
+class MSubModulo < ApplicationRecord
+end

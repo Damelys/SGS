@@ -1,0 +1,2 @@
+class MBanco < ApplicationRecord
+end

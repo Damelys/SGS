@@ -1,0 +1,17 @@
+<%= form_with(model: m_empleado, local: true) do |form| %>
+  <% if m_empleado.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(m_empleado.errors.count, "error") %> prohibited this m_empleado from being saved:</h2>
+
+      <ul>
+      <% m_empleado.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
