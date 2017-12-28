@@ -1,3 +1,3 @@
 class MPerfil < ApplicationRecord
-  has_many :m_usuarios
+  has_many :usuarios
 end

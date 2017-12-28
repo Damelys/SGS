@@ -1,5 +1,5 @@
 class MEmpleado < ApplicationRecord
-  has_one :m_usuario
+  has_one :usuario
   belongs_to :m_cliente
   belongs_to :m_cargo
   belongs_to :m_departamento
