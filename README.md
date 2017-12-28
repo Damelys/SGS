@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -22,3 +23,7 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+=======
+# SGS
+Poryecto de Sistema de Gestion de Asegurados
+>>>>>>> 6696703f21d7f155ab428549600484042392b218

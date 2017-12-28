@@ -6,6 +6,7 @@ class MUsuario < ApplicationRecord
   belongs_to :m_perfil
   belongs_to :m_empleado
   belongs_to :m_cliente
+  belongs_to :m_banco
   #Validaciones
   validates :name, :estado, presence: { message: "Debe indicar un nombre de usuario" }
   validates :name, length: { maximum: 40 }
