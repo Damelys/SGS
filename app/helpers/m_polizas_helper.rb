@@ -1,0 +1,2 @@
+module MPolizasHelper
+end

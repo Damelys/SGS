@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Sesions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sesions.each do |sesion| %>
+      <tr>
+        <td><%= link_to 'Show', sesion %></td>
+        <td><%= link_to 'Edit', edit_sesion_path(sesion) %></td>
+        <td><%= link_to 'Destroy', sesion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Sesion', new_sesion_path %>

@@ -1,0 +1,2 @@
+class MPoliza < ApplicationRecord
+end
