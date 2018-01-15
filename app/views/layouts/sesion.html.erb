@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SGS</title>
+  <%= csrf_meta_tags %>
+  <meta name="description" content="SSGE.">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="/assets/sgs.css" rel="stylesheet" />
+
+</head>
+
+<body class="fix-header fix-sidebar card-no-border">
+<div id="main-wrapper">
+  <div class="page-wrapper">
+    <%= yield %>
+  </div>
+</div>
+</body>
+<script src="/assets/bootstrap/js/tether.min.js"></script>
+<script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+</html>

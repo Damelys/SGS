@@ -1,10 +1,11 @@
 class SesionsController < ApplicationController
   before_action :set_sesion, only: [:show, :edit, :update, :destroy]
+  layout "sesion"
 
   # GET /sesions
   # GET /sesions.json
   def index
-    @sesions = Sesion.all
+   # @sesions = Sesion.all
   end
 
   # GET /sesions/1
@@ -14,7 +15,7 @@ class SesionsController < ApplicationController
 
   # GET /sesions/new
   def new
-    @sesion = Sesion.new
+    #@sesion = Sesion.new
   end
 
   # GET /sesions/1/edit

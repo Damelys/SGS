@@ -4,7 +4,7 @@ class MTitularesController < ApplicationController
   # GET /m_titulares
   # GET /m_titulares.json
   def index
-    @m_titulares = MTitular.all
+    @m_titulares = MTitular.limit(10)
   end
 
   # GET /m_titulares/1

@@ -4,10 +4,134 @@
     <title>SGS</title>
     <%= csrf_meta_tags %>
     <meta name="description" content="SSGE.">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-so.png">
+    <title>Monster Admin Template - The Most Complete & Trusted Bootstrap 4 Admin Template</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/assets/style.css" rel="stylesheet" />
+    <link href="/assets/css/colors/blue.css" id="theme" rel="stylesheet" />
+    <link href="/assets/sgs.css" rel="stylesheet" />
 
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="fix-header fix-sidebar card-no-border">
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+      <svg class="circular" viewBox="25 25 50 50">
+        <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /> </svg>
+    </div>
+    <div id="main-wrapper">
+      <!-- ============================================================== -->
+      <!-- Topbar header - style you can find in pages.scss -->
+      <!-- ============================================================== -->
+      <header class="topbar">
+        <nav class="navbar top-navbar navbar-toggleable-sm navbar-light">
+          <!-- ============================================================== -->
+          <!-- Logo -->
+          <!-- ============================================================== -->
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+              <!-- Logo icon -->
+              <b>
+                <!--You can put here icon as well // <i class="wi wi-sunset"></i> //-->
+                <!-- Dark Logo icon -->
+                <img src="/assets/logo-icon.png" alt="homepage" class="dark-logo" />
+
+              </b>
+              <!--End Logo icon -->
+              <!-- Logo text -->
+              <span>
+                            <!-- dark Logo text -->
+                            <img src="/assets/logo-text.png" alt="homepage" class="dark-logo" />
+                        </span>
+            </a>
+          </div>
+          <!-- ============================================================== -->
+          <!-- End Logo -->
+          <!-- ============================================================== -->
+          <div class="navbar-collapse">
+            <!-- ============================================================== -->
+            <!-- toggle and nav items -->
+            <!-- ============================================================== -->
+            <div class="mr-auto mt-md-0">
+              <span class="pagina-tit">Titulo de pagina Aca</span>
+            </div>
+            <!-- ============================================================== -->
+            <!-- User profile and search -->
+            <!-- ============================================================== -->
+            <ul class="navbar-nav my-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-muted waves-effect waves-dark" href="" data-toggle="tooltip" data-placement="bottom" title="Cerrar Sesión"><i class="fa fa-power-off m-r-10" aria-hidden="true" ></i>Markarn Doe</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+      <aside class="left-sidebar">
+        <!-- Sidebar scroll-->
+        <div class="scroll-sidebar">
+          <!-- Sidebar navigation-->
+          <nav class="sidebar-nav">
+            <ul id="sidebarnav">
+              <li>
+                <a href="index.html" class="waves-effect"><i class="fa fa-group m-r-10" aria-hidden="true"></i>ASEGURADOS</a>
+              </li>
+              <li>
+                <a href="pages-profile.html" class="waves-effect"><i class="fa fa-ambulance m-r-10" aria-hidden="true"></i>SINIESTROS</a>
+              </li>
+              <li>
+                <a href="table-basic.html" class="waves-effect"><i class="fa fa-folder-open m-r-10" aria-hidden="true"></i> REPORTES</a>
+              </li>
+              <li>
+                <a href="icon-fontawesome.html" class="waves-effect"><i class="fa fa fa-handshake-o m-r-10" aria-hidden="true"></i>VENTAS</a>
+              </li>
+              <li>
+                <a href="map-google.html" class="waves-effect"><i class="fa fa-money m-r-10" aria-hidden="true"></i>DESGRAVEN</a>
+              </li>
+              <li>
+                <a href="pages-blank.html" class="waves-effect"><i class="fa fa-gears m-r-10" aria-hidden="true"></i>PROCESOS</a>
+              </li>
+              <li>
+                <a href="pages-error-404.html" class="waves-effect"><i class="fa fa fa-edge m-r-10" aria-hidden="true"></i>ATENCIÓN WEB</a>
+              </li>
+              <li>
+                <a href="pages-error-404.html" class="waves-effect"><i class="fa fa-cubes m-r-10" aria-hidden="true"></i>MENTENIMIENTO</a>
+              </li>
+              <li>
+                <a href="pages-error-404.html" class="waves-effect"><i class="fa fa-wrench m-r-10" aria-hidden="true"></i>CONFIGURACIÓN</a>
+              </li>
+              <li>
+                <a href="pages-error-404.html" class="waves-effect"><i class="fa fa-info-circle m-r-10" aria-hidden="true"></i>AYUDA</a>
+              </li>
+
+            </ul>
+          </nav>
+          <!-- End Sidebar navigation -->
+        </div>
+        <!-- End Sidebar scroll-->
+      </aside>
+      <div class="page-wrapper">
+        <%= yield %>
+      </div>
+    </div>
+    <script src="/assets/jquery/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="/assets/bootstrap/js/tether.min.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <!--Wave Effects -->
+    <!--Menu sidebar -->
+    <!--stickey kit -->
+    <script src="/assets/sticky-kit-master/dist/sticky-kit.min.js"></script>
+    <!--Custom JavaScript -->
+    <script src="/assets/custom.min.js"></script>
+    <!-- ============================================================== -->
   </body>
 </html>
